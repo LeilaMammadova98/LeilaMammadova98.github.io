@@ -1,0 +1,58 @@
+@import 'general';
+
+.boxes{
+   background-image: url(https://templates.envytheme.com/promedi/default/assets/img/bg.png);
+   background-attachment:fixed ;
+   padding-top:70px;
+   padding-bottom:120px;
+
+   .box{
+      margin-top:25px;
+       padding-top:20px;
+       padding-bottom:20px;
+       padding-left:20px;
+       transition:all 0.5s ease-in;
+       padding-right:20px;
+       background-color: white;
+       &:hover{
+        transform: translateY(-10px);
+           i{
+               padding:33px;
+    
+               color:white!important;;;
+             
+           }
+       }
+       .icon{
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        border: 2px solid $blue;
+        height: 70px;
+        justify-content: center;
+        color:$blue;
+        margin: 0 auto;
+          width: 70px;
+       i{
+           color:$blue;
+        transition:all 0.2s;
+        font-size: 26px;
+        display: flex;
+        background-color: $blue;
+        align-items: center;
+     
+        border-radius: 100%;
+        justify-content: center;
+     width: 0;
+        margin: 0 auto;
+ height: 0;
+    
+       }}
+       p{
+           color:$text-grey;
+       }
+       ;
+   }
+}
+
+

@@ -1,0 +1,58 @@
+@import 'general';
+
+
+
+#welcome{
+    .right{
+        margin-right: 66px;
+        position:relative;
+    span{
+
+    
+        &::before{
+            position: absolute;
+    
+     font-size: 46px;
+    
+    color: #396cf0;
+    content: "\f479";
+    font-family: "FontAwesome";
+    font-weight: 400;
+        }
+
+        }
+        p{
+            color:$text-grey;
+        }
+    }
+}
+
+.happiness{
+    button{
+        background-color: $blue;
+        color:white;
+        font-weight:600;
+        width:30%;
+    }
+    .image{
+        img{width:100%}
+    }
+
+    span{
+        color:$blue;
+    }
+    h3{
+        font-weight:700;
+    }
+    p{
+        color:$text-grey;
+    }
+    ul{
+        li{
+            color:$text-grey;
+            i{
+                color:$blue;
+            }
+        }
+    }
+}

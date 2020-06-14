@@ -1,0 +1,22 @@
+@import 'general';
+.section{    p{color:$text-grey}
+    .image{
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
+
+.details{
+
+    .info  li{
+        margin-top:10px;
+        color:$text-grey;
+        justify-content: space-between;
+    }
+    .social li{
+        font-size:20px;
+        color:$blue;
+    }
+}

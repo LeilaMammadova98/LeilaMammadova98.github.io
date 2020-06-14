@@ -1,0 +1,19 @@
+@import 'general';
+
+
+.section{    p{color:$text-grey}
+    .image{
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
+
+.department-info{
+
+    ul  li{
+        color:$text-grey;
+        justify-content: space-between;
+    }
+}
