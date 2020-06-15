@@ -208,6 +208,8 @@ $('.rightDoub').click(function (e) {
 
     }).mount()
 
+
+    
   
     const counters=document.querySelectorAll('.counter')
 
@@ -227,11 +229,8 @@ else{
 }
 
 
-updateCount()
-
-
-
-    }
+updateCount();
+   }
 )
 
 

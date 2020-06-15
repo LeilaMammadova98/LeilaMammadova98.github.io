@@ -1,6 +1,18 @@
 $blue: #396cf0;
 $line-grey: #eeeeee;
 $text-grey: #7d7373;
+@media screen and(max-width:300px) {
+    .number {
+      width:100%;
+      z-index:3;
+      position:relative;
+    }
+}
+@media screen and(max-width:300px) {
+    .navbar-brand {
+     margin-left:0;
+    }
+}
 a:hover {
     text-decoration: none;
 }
@@ -19,10 +31,21 @@ body {
 * {
     box-sizing: border-box;
 }
+.navbar-toggler{
+    border: 1px solid $blue;
+    border-radius: 0; 
+}
+.navbar-toggler:focus{
+    outline:none;
+  }
 .nav-item.active{
     a{
         color:$blue;
     }
+}
+.fa-bars{
+    color:$blue;
+    font-size:27px;
 }
 @media screen and(max-width:1300px) {
     .contacts {
@@ -91,8 +114,9 @@ background-image: url(https://templates.envytheme.com/promedi/default/assets/img
 .appoint {
     background-color: $blue;
     color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    margin-top: 10px;
+    padding: 17px 9px;
+    transition:all 0.2s;
     &:hover {
         color: white;
         background-color: black;
@@ -180,7 +204,7 @@ background-image: url(https://templates.envytheme.com/promedi/default/assets/img
          }
      }
      .video-area {  
-           margin-top: -276px;
+           margin-top: 33px;
          .images {
              background-image: url(https://templates.envytheme.com/promedi/default/assets/img/video-bg.jpg);
              background-size: cover;
@@ -365,7 +389,8 @@ background-color: white;;
 }
 
 .navbar {
-  //  z-index: 838;
+    padding: 18px 33px;
+    z-index:838;
     justify-content: space-between;
 }
 .ust {

@@ -1,3 +1,17 @@
+@media screen and (max-width: 300px) {
+  .number {
+    width: 100%;
+    z-index: 3;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -20,8 +34,22 @@ body {
           box-sizing: border-box;
 }
 
+.navbar-toggler {
+  border: 1px solid #396cf0;
+  border-radius: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
 .nav-item.active a {
   color: #396cf0;
+}
+
+.fa-bars {
+  color: #396cf0;
+  font-size: 27px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -91,8 +119,10 @@ header::after {
 .appoint {
   background-color: #396cf0;
   color: white;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding: 17px 9px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .appoint:hover {
@@ -181,7 +211,7 @@ header::after {
 }
 
 .watchVideo .video-area {
-  margin-top: -276px;
+  margin-top: 33px;
 }
 
 .watchVideo .video-area .images {
@@ -407,6 +437,8 @@ header::after {
 }
 
 .navbar {
+  padding: 18px 33px;
+  z-index: 838;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

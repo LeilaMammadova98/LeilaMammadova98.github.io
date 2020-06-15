@@ -1,3 +1,16 @@
+@media screen and (max-width: 600px) {
+  .number {
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slider {
+    height: 50vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .news .card {
     width: 100%;
@@ -13,11 +26,35 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .mini-line .right p {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 300px) {
   .number {
     width: 100%;
     z-index: 3;
     position: relative;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-services {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .experience .right p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .experience h3 {
+    font-size: 16px;
   }
 }
 
@@ -151,6 +188,20 @@ header .slider li {
   position: relative;
 }
 
+header .fa-bars {
+  color: #396cf0;
+  font-size: 27px;
+}
+
+header .navbar-toggler {
+  border: 1px solid #396cf0;
+  border-radius: 0;
+}
+
+header .navbar-toggler:focus {
+  outline: none;
+}
+
 header .about-services {
   z-index: 99;
   border: 1px solid #eee;
@@ -205,6 +256,7 @@ header .ust {
 }
 
 .navbar {
+  padding: 18px 33px;
   z-index: 838;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -267,8 +319,10 @@ header .ust {
 .appoint {
   background-color: #396cf0;
   color: white;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding: 17px 9px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .appoint:hover {
@@ -282,14 +336,20 @@ nav {
   background-color: white;
 }
 
-nav .nav-link {
+.navbar-nav {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 13px;
+}
+
+.navbar-nav .nav-link {
   color: black;
   font-size: 16.7px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   font-weight: 500;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 0;
+  margin-bottom: 7px;
 }
 
 .nav-item {
@@ -377,11 +437,18 @@ nav .nav-link {
   color: white;
 }
 
+.experience .left img {
+  width: 100% !important;
+  height: auto;
+  -webkit-clip-path: polygon(0% 15%, 0 4%, 18% 1%, 76% 2%, 92% 5%, 100% 15%, 100% 85%, 93% 98%, 85% 100%, 15% 100%, 5% 96%, 0% 85%);
+          clip-path: polygon(0% 15%, 0 4%, 18% 1%, 76% 2%, 92% 5%, 100% 15%, 100% 85%, 93% 98%, 85% 100%, 15% 100%, 5% 96%, 0% 85%);
+}
+
 .experience {
   margin-top: 100px;
 }
 
-.experience .right .aboutUs {
+.right .aboutUs {
   color: white;
   padding-left: 25px;
   padding-right: 25px;
@@ -390,14 +457,8 @@ nav .nav-link {
   background-color: #396cf0;
 }
 
-.experience .right p {
+.right p {
   color: #7d7373;
-}
-
-.experience .left img {
-  width: 100%;
-  -webkit-clip-path: polygon(0% 15%, 0 4%, 18% 1%, 76% 2%, 92% 5%, 100% 15%, 100% 85%, 93% 98%, 85% 100%, 15% 100%, 5% 96%, 0% 85%);
-          clip-path: polygon(0% 15%, 0 4%, 18% 1%, 76% 2%, 92% 5%, 100% 15%, 100% 85%, 93% 98%, 85% 100%, 15% 100%, 5% 96%, 0% 85%);
 }
 
 .mini-line {
@@ -528,7 +589,7 @@ nav .nav-link {
 }
 
 .watchVideo .video-area {
-  margin-top: -276px;
+  margin-top: 33px;
 }
 
 .watchVideo .video-area .images {

@@ -3,6 +3,16 @@
 $blue: #396cf0;
 $line-grey: #eeeeee;
 $text-grey: #7d7373;
+@media screen and(max-width:600px) {
+    .number {
+        width:100%;
+        bottom:0;
+    }
+}
+@media screen and(max-width:500px) {
+    .slider {
+height:50vh;     }
+ }
 @media screen and(max-width:800px) {
     .news .card {
      width:100%;
@@ -18,6 +28,11 @@ $text-grey: #7d7373;
      }
     }
 }
+@media screen and(max-width:500px) {
+   .mini-line .right p {
+    font-size:16px
+    }
+}
 @media screen and(max-width:300px) {
     .number {
       width:100%;
@@ -25,6 +40,22 @@ $text-grey: #7d7373;
       position:relative;
     }
 }
+@media screen and(max-width:600px) {
+    .about-services {
+     margin-top:0!important;
+    }
+}
+@media screen and(max-width:500px) {
+    .experience .right p {
+   font-size:16px;
+    }
+}
+@media screen and(max-width:500px) {
+    .experience h3 {
+   font-size:16px;
+    }
+}
+
 @media screen and(max-width:600px) {
     #left-image {
         display:none;
@@ -156,7 +187,17 @@ header {
     // font-size: 84px;
     //     }
     }
-   
+   .fa-bars{
+       color:$blue;
+       font-size:27px;
+   }
+   .navbar-toggler{
+    border: 1px solid $blue;
+    border-radius: 0; 
+}
+.navbar-toggler:focus{
+  outline:none;
+}
     .about-services {
         z-index: 99;
         border: 1px solid #eee;
@@ -207,6 +248,7 @@ header {
 }
 
 .navbar {
+    padding: 18px 33px;
     z-index:838;
     justify-content: space-between;
 }
@@ -258,8 +300,9 @@ header {
 .appoint {
     background-color: $blue;
     color: white;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    margin-top: 10px;
+    padding: 17px 9px;
+    transition:all 0.2s;
     &:hover {
         color: white;
         background-color: black;
@@ -271,16 +314,19 @@ nav {
     transition:all 0.4s ease;
     background-color: white;
 
-    .nav-link {
-        color: black;
-        font-size: 16.7px;
-        transition: all 0.4s;
-        font-weight: 500;
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
 }
-
+.navbar-nav{margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 13px;
+.nav-link {
+    color: black;
+    font-size: 16.7px;
+    transition: all 0.4s;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 7px;
+}
+}
 .nav-item {
     transition: all 0.5s;
     position: relative;
@@ -355,26 +401,12 @@ nav {
         }
     }
 }
-
-.experience {
-    margin-top: 100px;
-    .right {
-        .aboutUs {
-            color: white;
-            padding-left: 25px;
-            padding-right: 25px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-            background-color: $blue;
-        }
-        p {
-            color: $text-grey;
-        }
-    }
-
+.experience{
     .left {
-        img {width:100%;
+        img {
+          
+            width:100%!important;
+            height:auto;
             clip-path: polygon(
                 0% 15%,
                 0 4%,
@@ -392,6 +424,28 @@ nav {
         }
     }
 }
+
+
+.experience {
+    margin-top: 100px;
+   
+}
+    .right {
+        .aboutUs {
+            color: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            background-color: $blue;
+        }
+        p {
+            color: $text-grey;
+        }
+    }
+
+   
 
 .mini-line {
     background-attachment: fixed;
@@ -525,7 +579,7 @@ nav {
         }
     }
     .video-area {  
-          margin-top: -276px;
+          margin-top: 33px;
         .images {
             background-image: url(https://templates.envytheme.com/promedi/default/assets/img/video-bg.jpg);
             background-size: cover;
@@ -1162,3 +1216,5 @@ background-color: $blue;
     .nav-link{
         color:$blue;
     }}
+
+    
