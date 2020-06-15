@@ -1,8 +1,7 @@
 @import 'general';
 
 
-
-.page-link{
+.page-item .page-link{
     width: 45px;
     display:flex;
     height: 45px;
@@ -11,7 +10,8 @@
     color: #848484;
     background-color: #ffffff;
     border-radius: 50% !important;
-    text-align: center;
+   align-items: center!important;
+   justify-content:center!important;
     line-height: 45px;
     font-size: 15px;
     -webkit-box-shadow: 0 2px 10px 0 #d8dde6;

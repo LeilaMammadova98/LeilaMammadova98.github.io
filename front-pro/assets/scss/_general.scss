@@ -8,6 +8,7 @@ $text-grey: #7d7373;
       position:relative;
     }
 }
+
 @media screen and(max-width:300px) {
     .navbar-brand {
      margin-left:0;
@@ -181,7 +182,7 @@ background-image: url(https://templates.envytheme.com/promedi/default/assets/img
     
  
      .area {
-         padding-bottom: 300px;
+         padding-bottom: 100px;
          padding-top: 20px;
          background-color: $blue;
          .title {
@@ -393,25 +394,24 @@ background-color: white;;
     z-index:838;
     justify-content: space-between;
 }
-.ust {
-    position: absolute;
-    z-index: 999;
-   
-    left: 203px;
-}
-nav { transition:all 1.5s;
+nav {
+    
+    transition:all 0.4s ease;
     background-color: white;
 
-    .nav-link {
-        color: black;
-        font-size: 16.7px;
-        transition: all 0.4s;
-        font-weight: 500;
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
 }
-
+.navbar-nav{margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 13px;
+.nav-link {
+    color: black;
+    font-size: 16.7px;
+    transition: all 0.4s;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 7px;
+}
+}
 .nav-item {
     transition: all 0.5s;
     position: relative;
@@ -429,11 +429,11 @@ nav { transition:all 1.5s;
     .elave {
         position: absolute;
         width: 132px;
-        top: 54px;
-        // display:none;
+        top: 68%;
         opacity: 0;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        left: 9px;
+        left: 30%;
         background-color: white;
 
         li {
@@ -453,6 +453,13 @@ nav { transition:all 1.5s;
         }
     }
 }
+.ust {
+    position: absolute;
+    z-index: 999;
+   
+    left: 203px;
+}
+
 .contacts {
     margin-top: 40px;
     .right {
@@ -967,4 +974,8 @@ transition:all 0.5s;
     border-radius:0;
 padding: 24px 16px;
 border:1px solid $line-grey;
+}
+section{
+    padding-top:50px;
+    padding-bottom:50px;
 }

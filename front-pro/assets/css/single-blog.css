@@ -188,7 +188,7 @@ header::after {
 }
 
 .watchVideo .area {
-  padding-bottom: 300px;
+  padding-bottom: 100px;
   padding-top: 20px;
   background-color: #396cf0;
 }
@@ -444,26 +444,26 @@ header::after {
           justify-content: space-between;
 }
 
-.ust {
-  position: absolute;
-  z-index: 999;
-  left: 203px;
-}
-
 nav {
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   background-color: white;
 }
 
-nav .nav-link {
+.navbar-nav {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 13px;
+}
+
+.navbar-nav .nav-link {
   color: black;
   font-size: 16.7px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   font-weight: 500;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 0;
+  margin-bottom: 7px;
 }
 
 .nav-item {
@@ -484,11 +484,11 @@ nav .nav-link {
 .nav-item .elave {
   position: absolute;
   width: 132px;
-  top: 54px;
+  top: 68%;
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  left: 9px;
+  left: 30%;
   background-color: white;
 }
 
@@ -508,6 +508,12 @@ nav .nav-link {
 
 .nav-item .elave li:hover a {
   color: #396cf0;
+}
+
+.ust {
+  position: absolute;
+  z-index: 999;
+  left: 203px;
 }
 
 .contacts {
@@ -1097,6 +1103,11 @@ h4 {
   border-radius: 0;
   padding: 24px 16px;
   border: 1px solid #eeeeee;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 body {
