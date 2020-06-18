@@ -1,11 +1,24 @@
 $blue: #396cf0;
 $line-grey: #eeeeee;
 $text-grey: #7d7373;
-@media screen and(max-width:300px) {
+@media screen and(max-width:800px) {
+    h4{
+        font-size:1.2rem;
+    }
+     h5{
+         font-size:16px;
+     }
+     p{
+         font-size:13px;
+     }
+    
+}
+@media screen and(max-width:600px) {
     .number {
       width:100%;
       z-index:3;
-      position:relative;
+bottom:0;
+   //   position:relative;
     }
 }
 
@@ -14,6 +27,18 @@ $text-grey: #7d7373;
      margin-left:0;
     }
 }
+@media screen and(max-width:1200px) {
+    
+    .number {
+        text-align: center;
+      width:100%;
+      z-index:3;
+bottom:0!important;
+ 
+    }
+
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -978,4 +1003,44 @@ border:1px solid $line-grey;
 section{
     padding-top:50px;
     padding-bottom:50px;
+}
+.appointment{
+    .book{
+      
+        color: #396cf0;
+        font-weight: 500;
+        font-size: 20px;
+       // padding: 16px;
+        background-color:white;
+color:$blue;
+        &:hover{
+            background-color: black;
+            color:white;
+        }
+    }
+.right1{background-color: $blue;
+padding-top:50px;
+padding-left:30px;
+}
+    .col-lg-5{
+        
+
+            background-image: url(https://templates.envytheme.com/promedi/default/assets/img/appointment-left-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+     
+            position:relative;
+           
+
+            .number{
+                position: absolute;
+                background-color: #2f2f98c7;
+               
+                bottom: 97px;
+                padding: 16px;
+                color: white;
+                right: 0;
+            }
+      
+    }
 }

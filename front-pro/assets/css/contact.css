@@ -1166,19 +1166,36 @@ section {
   right: 0;
 }
 
-.section p {
+.invalid-feedback, .is-invalid {
+  color: red !important;
+}
+
+h5 {
+  font-weight: 700 !important;
+}
+
+.contacts li {
   color: #7d7373;
 }
 
-.section .image img {
-  width: 100%;
-  height: auto;
+.contacts li i {
+  color: #396cf0;
+  margin-right: 6px;
+  font-size: 10px;
 }
 
-.department-info ul li {
-  color: #7d7373;
+.send-message {
+  color: white;
+  background-color: #396cf0;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.hours li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #7d7373;
+  margin-top: 6px;
 }
-/*# sourceMappingURL=department.css.map */
+/*# sourceMappingURL=contact.css.map */

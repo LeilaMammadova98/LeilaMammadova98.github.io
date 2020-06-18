@@ -1166,19 +1166,13 @@ section {
   right: 0;
 }
 
-.section p {
-  color: #7d7373;
+@media screen and (max-width: 1200px) {
+  .as {
+    margin-top: 25px !important;
+  }
 }
 
-.section .image img {
-  width: 100%;
-  height: auto;
+.as {
+  margin-top: -48px;
 }
-
-.department-info ul li {
-  color: #7d7373;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-/*# sourceMappingURL=department.css.map */
+/*# sourceMappingURL=appoint.css.map */
