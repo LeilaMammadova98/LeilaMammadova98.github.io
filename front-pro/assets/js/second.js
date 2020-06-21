@@ -76,9 +76,9 @@ $(document).ready(function () {
  
     //  })
    
-    $(function () {
+    // $(function () {
       
-        $('.header2').load("_header.html",function(){
+        // $('.header2').load("_header.html",function(){
 let pathName=window.location.pathname;
 console.log(pathName)
 
@@ -96,10 +96,13 @@ if($(`a[href='${page}']`).parent('.nav-link li')){
         
 
         
-        });
+       
 
-        $('.footer').load('_footer.html');
-    })
+
+// });
+
+        // $('.footer').load('_footer.html');
+    // })
    
 
 $('.rightDoub').click(function (e) { 
