@@ -1018,12 +1018,6 @@ h4 {
   width: 100%;
 }
 
-.one {
-  -webkit-transform: translateX(90px);
-          transform: translateX(90px);
-  padding-right: 87px;
-}
-
 .replies .left img {
   width: 77%;
   border-style: none;

@@ -1,8 +1,8 @@
 @import 'general';
-body{
-  background-color: #f9faff;  
-}
 
+// body{
+//     background-color: blue;;
+// }
 @media screen and(min-width:994px) and (max-width:1200px){
     .post-lists li {margin-top:20px!important;
         
@@ -28,6 +28,20 @@ body{
         padding: 15px 20px!important;
     }
 }
+@media screen and(max-width:600px) {
+    .all .date{
+        font-size: 14px!important;
+    }
+}
+@media screen and(max-width:600px) {
+    .reply .btn{
+        font-size: 14px!important;
+    }
+}
+body{
+    background-color: rgb(245, 244, 244);  
+  }
+
 .card{background-color: white;;
     border:none;
     -webkit-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.48);
@@ -101,8 +115,7 @@ body{
     }
 
     .one{
-        transform: translateX(90px);
-        padding-right: 87px;
+       margin-left:110px;
     }
     .replies{
 .left{
