@@ -1,3 +1,41 @@
+@media screen and (max-width: 600px) {
+  .group button {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 994px) and (max-width: 1200px) {
+  .post-lists li {
+    margin-top: 20px !important;
+  }
+  .post-lists li .right-words span {
+    font-size: 15px !important;
+  }
+  .post-lists li .right-words h6 {
+    margin-top: 12px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card .image button {
+    font-size: 19px !important;
+    padding: 15px 20px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .all .date {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reply .btn {
+    font-size: 14px !important;
+  }
+}
+
 @media screen and (max-width: 800px) {
   h4 {
     font-size: 1.2rem;
@@ -97,6 +135,29 @@ body {
   .sec {
     margin-left: 29px;
   }
+}
+
+.one {
+  margin-left: 110px;
+}
+
+.replies .left img {
+  width: 77%;
+  border-style: none;
+  border-radius: 100%;
+}
+
+.replies .all {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.replies .all button {
+  color: #396cf0;
 }
 
 .nav-item.active a {

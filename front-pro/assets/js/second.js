@@ -201,45 +201,10 @@ $('.rightDoub').click(function (e) {
         }
     })
 
-    new Glide('.glide', {
-        type: 'carousel',
+  
+    
 
-        startAt: 1,
-        perView: 3,
-        focusAt: 'center',
-        autoplay: 5000,
-        breakpoints: {
-            
-            1000: { perView: 2 },
-           600: { perView: 1 },
-  300:{perView:1},
-        },
-
-
-        gap: 50,
-
-
-    }).mount()
-    new Glide('.glide2', {
-        type: 'carousel',
-      gap:30,
-        startAt: 1,
-        perView: 3,
-        focusAt: 'center',
-      autoplay: 5000,
-        breakpoints: {
-            1000: { perView: 2 },
-            800: { perView: 1 },
-              300:{perView:1},
-        },
-      
-
-
-        gap: 50,
-
-
-    }).mount()
-
+  
 
     
   

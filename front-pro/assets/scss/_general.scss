@@ -1,6 +1,40 @@
 $blue: #396cf0;
 $line-grey: #eeeeee;
 $text-grey: #7d7373;
+@media screen and(max-width:600px) {
+    .group button {
+   margin-left:0!important;
+    }
+}
+@media screen and(min-width:994px) and (max-width:1200px){
+    .post-lists li {margin-top:20px!important;
+        
+        .right-words{
+    span{
+        font-size: 15px!important;
+    }
+    h6 {
+        margin-top: 12px!important;
+        font-size: 15px!important;
+    }}
+}}
+
+@media screen and(max-width:600px) {
+    .card .image button{
+        font-size: 19px!important;
+        padding: 15px 20px!important;
+    }
+}
+@media screen and(max-width:600px) {
+    .all .date{
+        font-size: 14px!important;
+    }
+}
+@media screen and(max-width:600px) {
+    .reply .btn{
+        font-size: 14px!important;
+    }
+}
 @media screen and(max-width:800px) {
     h4{
         font-size:1.2rem;
@@ -97,6 +131,30 @@ z-index:9999;
         margin-left: 29px;
     }
 }
+
+.one{
+    margin-left:110px;
+ }
+ .replies{
+.left{
+
+         img{width: 77%;
+          //   vertical-align: middle;
+             border-style: none;
+             border-radius: 100%;}
+   
+ }
+ .all{
+     align-items: center;
+     justify-content: space-between;
+
+     button{
+         color:$blue;
+     }
+ }
+ 
+ }
+
 .nav-item.active{
     a{
         color:$blue;
