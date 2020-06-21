@@ -228,6 +228,11 @@ $('.rightDoub').click(function (e) {
     
     
         }).mount()
+      
+      
+    }
+
+    else if(page2=='index.html'){
         new Glide('.glide2', {
             type: 'carousel',
           gap:30,
@@ -246,15 +251,13 @@ $('.rightDoub').click(function (e) {
             gap: 50,
     
     
-        }).mount()
-      
+        }).mount()  
     }
     else{
         return;
     }
     
-
-  
+   
 
     
   
