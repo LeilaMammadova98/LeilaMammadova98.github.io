@@ -21,6 +21,45 @@ body {
 * {
     box-sizing: border-box;
 }
+
+@media screen and(max-width:740px) {
+    .watchVideo .video-area {
+
+        margin-bottom: 0!important;
+    .images{
+       
+    height: 266px!important;
+    .play{
+        width: 132px!important;
+    height: 132px!important;
+    font-size: 43px!important;
+    }
+    }
+
+
+    }
+}
+
+@media screen and(min-width:576px) {
+  .footer
+   {
+       .col-sm-6 {
+    
+    width: 50%!important;
+.links{
+    margin-left:0!important;
+    margin-right:0!important;
+}
+}
+.copy{
+    float:left!important;
+}
+
+}
+
+
+}
+  
 @media screen and(max-width:1200px) {
     
             .number {
@@ -60,12 +99,12 @@ body {
      margin-top:0!important;
     }
 }
-@media screen and(max-width:500px) {
+@media screen and(max-width:800px) {
     .experience .right p {
    font-size:16px;
     }
 }
-@media screen and(max-width:500px) {
+@media screen and(max-width:800px) {
     .experience h3 {
    font-size:16px;
     }
@@ -94,6 +133,26 @@ body {
         margin-left: 29px;
     }
 }
+
+
+
+
+@media screen and(max-width:600px) {
+    header .slider{
+         height:50vh!important;
+  
+         .images{
+  img{
+     // mix-blend-mode: overlay;
+      height: fill-available; ;
+  }
+         }
+        }}
+  
+      
+        
+
+
 @media screen and(max-width:1300px) {
     .ust {
         margin-left: -203px;
@@ -101,6 +160,14 @@ body {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
 .bor.glide__slide--active{
     .card{
          border:3px solid $blue;
@@ -625,7 +692,7 @@ nav {
         opacity:1;
     }
     to{
-        padding:200px;
+        padding:180px;
         opacity:0;
     }
 }

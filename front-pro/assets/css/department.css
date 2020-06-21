@@ -4,6 +4,33 @@
   }
 }
 
+@media screen and (max-width: 740px) {
+  .watchVideo .video-area {
+    margin-bottom: 0 !important;
+  }
+  .watchVideo .video-area .images {
+    height: 266px !important;
+  }
+  .watchVideo .video-area .images .play {
+    width: 132px !important;
+    height: 132px !important;
+    font-size: 43px !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .footer .col-sm-6 {
+    width: 50% !important;
+  }
+  .footer .col-sm-6 .links {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .footer .copy {
+    float: left !important;
+  }
+}
+
 @media screen and (min-width: 994px) and (max-width: 1200px) {
   .post-lists li {
     margin-top: 20px !important;
@@ -453,7 +480,7 @@ header::after {
     opacity: 1;
   }
   to {
-    padding: 200px;
+    padding: 180px;
     opacity: 0;
   }
 }
@@ -464,7 +491,7 @@ header::after {
     opacity: 1;
   }
   to {
-    padding: 200px;
+    padding: 180px;
     opacity: 0;
   }
 }
@@ -1086,14 +1113,18 @@ h4 {
 
 .search i {
   position: absolute;
-  right: 4%;
+  right: 0;
   color: white;
   top: 0;
   background-color: blue;
   display: inline-block;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
-  padding: 13px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  padding: 22px;
+}
+
+.post-lists li {
+  margin-top: 15px !important;
 }
 
 .latest-posts h4, .popular-tags h4, .categories h4 {

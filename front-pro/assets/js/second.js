@@ -157,6 +157,12 @@ $('.rightDoub').click(function (e) {
     
     }, 5000);
     
+//     $('.nav-link').click(function (e) { 
+//       // e.preventDefault();
+// $(this).find('.elave').css("display","block")
+
+        
+    });
    
     $('.formAppoint').validate({
         errorPlacement: function(error, element) {
@@ -234,8 +240,11 @@ $('.rightDoub').click(function (e) {
       
       
     }
+    else{
+        return;
+    }
 
-    else if(page2=='index.html'){
+     if(page2=='index.html'){
         new Glide('.glide2', {
             type: 'carousel',
           gap:30,
