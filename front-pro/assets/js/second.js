@@ -201,60 +201,14 @@ $('.rightDoub').click(function (e) {
         }
     })
 
-    let pathName=window.location.pathname;
-    
-
-
-
-    let page=result[2];
-    if(page==index.html ||page==second.html){
-        new Glide('.glide', {
-            type: 'carousel',
-    
-            startAt: 1,
-            perView: 3,
-            focusAt: 'center',
-            autoplay: 5000,
-            breakpoints: {
-                
-                1000: { perView: 2 },
-               600: { perView: 1 },
-      300:{perView:1},
-            },
-    
-    
-            gap: 50,
-    
-    
-        }).mount()
-        new Glide('.glide2', {
-            type: 'carousel',
-          gap:30,
-            startAt: 1,
-            perView: 3,
-            focusAt: 'center',
-          autoplay: 5000,
-            breakpoints: {
-                1000: { perView: 2 },
-                800: { perView: 1 },
-                  300:{perView:1},
-            },
-          
-    
-    
-            gap: 50,
-    
-    
-        }).mount()
-      
-    }
-    let pattern2=/(.*)\/(.*)/g;
+   
+      let pattern2=/(.*)\/(.*)/g;
 
     let pathName2=window.location.pathname;
-    let result=pattern2.exec(pathName2)
-    let page=result[2];
-    console.log(`page:${page}`)
-    if(page=='index.html' ||page=='second.html'){
+    let result2=pattern2.exec(pathName2)
+    let page2=result2[2];
+    console.log(`page:${page2}`)
+    if(page2=='index.html' ||page2=='second.html'){
         new Glide('.glide', {
             type: 'carousel',
     
