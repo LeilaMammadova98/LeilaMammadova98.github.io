@@ -162,7 +162,7 @@ $('.rightDoub').click(function (e) {
 // $(this).find('.elave').css("display","block")
 
         
-    });
+    // });
    
     $('.formAppoint').validate({
         errorPlacement: function(error, element) {
