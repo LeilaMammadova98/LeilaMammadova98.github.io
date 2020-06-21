@@ -200,10 +200,13 @@ $('.rightDoub').click(function (e) {
 
         }
     })
+    let pattern2=/(.*)\/(.*)/g;
 
     let pathName2=window.location.pathname;
-    let page=pathName2[2];
-    if(page==index.html ||page==second.html){
+    let result=pattern2.exec(pathName2)
+    let page=result[2];
+    console.log(`page:${page}`)
+    if(page=='index.html' ||page=='second.html'){
         new Glide('.glide', {
             type: 'carousel',
     
