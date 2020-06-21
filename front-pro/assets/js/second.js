@@ -2,79 +2,79 @@
 
 let pattern=/(.*)\/(.*)/g;
 $(document).ready(function () {
-    $.ajax({
-        async:false,
-        type: "GET",
-        url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors",
-        beforeSend: function() {
+    // $.ajax({
+    //     async:false,
+    //     type: "GET",
+    //     url: "http://kamranaeff1994-002-site3.ctempurl.com/api/Doctors",
+    //     beforeSend: function() {
             
-            $('.loader').addClass('show');
-        },
-        success: function (response) {
-            $.each(response, function (indexInArray, item) { 
+    //         $('.loader').addClass('show');
+    //     },
+    //     success: function (response) {
+    //         $.each(response, function (indexInArray, item) { 
                
                     
-     let allCards=$(`<div class="card item" ><div class="image1">
-                        <div class="overlay">
-                        <ul class="list d-flex flex-row">
+    //  let allCards=$(`<div class="card item" ><div class="image1">
+    //                     <div class="overlay">
+    //                     <ul class="list d-flex flex-row">
                        
-                        <li>
-                        <a href="#"><i class="fab mr-3 fa-instagram mr-3"></i></a></li>
-                       <li><a href="#"><i class="fab fa-facebook mr-3"></i></a></li>
-                       <li><a href="#"><i class="fab fa-twitter mr-3"></i></a></li>
+    //                     <li>
+    //                     <a href="#"><i class="fab mr-3 fa-instagram mr-3"></i></a></li>
+    //                    <li><a href="#"><i class="fab fa-facebook mr-3"></i></a></li>
+    //                    <li><a href="#"><i class="fab fa-twitter mr-3"></i></a></li>
                        
-                       </ul>
-                       </div>
-                        <img class="card-img-top" src="http://kamranaeff1994-002-site3.ctempurl.com/images/${item.image}" alt="Card image cap">   
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title text-center">${item.name}</h5>
-                          <h6 class="doc-title text-center">
-                           ${item.profession}
-                          </h6>
-                          <p class="card-text text-center pb-3">${item.description}</p>
+    //                    </ul>
+    //                    </div>
+    //                     <img class="card-img-top" src="http://kamranaeff1994-002-site3.ctempurl.com/images/${item.image}" alt="Card image cap">   
+    //                     </div>
+    //                     <div class="card-body">
+    //                       <h5 class="card-title text-center">${item.name}</h5>
+    //                       <h6 class="doc-title text-center">
+    //                        ${item.profession}
+    //                       </h6>
+    //                       <p class="card-text text-center pb-3">${item.description}</p>
                         
-                        </div>
-                      </div>`);
+    //                     </div>
+    //                   </div>`);
                     
-                    // $(col).html(allCards)
-                    $('.products').append(allCards);    
-            });
+    //                 // $(col).html(allCards)
+    //                 $('.products').append(allCards);    
+    //         });
          
     
-    }  
-    }).done(function(){
-        $('.loader').fadeOut(1000,function(){
+    // }  
+    // }).done(function(){
+    //     $('.loader').fadeOut(1000,function(){
         
-         $('.loader').removeClass('show');
-    });  
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            autoplay:true,
-            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    //      $('.loader').removeClass('show');
+    // });  
+    //     $('.owl-carousel').owlCarousel({
+    //         loop:true,
+    //         margin:10,
+    //         autoplay:true,
+    //         navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
     
-            autoplayTimeout:4000,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    margin:10,
-                    items:2,
-                    nav:false
-                },
-                1000:{
-                    items:3,
-                    nav:true,
+    //         autoplayTimeout:4000,
+    //         responsiveClass:true,
+    //         responsive:{
+    //             0:{
+    //                 items:1,
+    //                 nav:true
+    //             },
+    //             600:{
+    //                 margin:10,
+    //                 items:2,
+    //                 nav:false
+    //             },
+    //             1000:{
+    //                 items:3,
+    //                 nav:true,
                    
-                }
-            }
-        })
+    //             }
+    //         }
+    //     })
  
-     })
+    //  })
    
     $(function () {
       
@@ -200,6 +200,54 @@ $('.rightDoub').click(function (e) {
 
         }
     })
+
+    let pathName=window.location.pathname;
+    
+
+
+
+    let page=result[2];
+    if(page==index.html ||page==second.html){
+        new Glide('.glide', {
+            type: 'carousel',
+    
+            startAt: 1,
+            perView: 3,
+            focusAt: 'center',
+            autoplay: 5000,
+            breakpoints: {
+                
+                1000: { perView: 2 },
+               600: { perView: 1 },
+      300:{perView:1},
+            },
+    
+    
+            gap: 50,
+    
+    
+        }).mount()
+        new Glide('.glide2', {
+            type: 'carousel',
+          gap:30,
+            startAt: 1,
+            perView: 3,
+            focusAt: 'center',
+          autoplay: 5000,
+            breakpoints: {
+                1000: { perView: 2 },
+                800: { perView: 1 },
+                  300:{perView:1},
+            },
+          
+    
+    
+            gap: 50,
+    
+    
+        }).mount()
+      
+    }
     let pattern2=/(.*)\/(.*)/g;
 
     let pathName2=window.location.pathname;
