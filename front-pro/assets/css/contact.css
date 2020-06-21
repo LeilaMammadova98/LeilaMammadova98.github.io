@@ -1018,25 +1018,6 @@ h4 {
   width: 100%;
 }
 
-.replies .left img {
-  width: 77%;
-  border-style: none;
-  border-radius: 100%;
-}
-
-.replies .all {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.replies .all button {
-  color: #396cf0;
-}
-
 .search input {
   height: 44px;
   position: relative;
