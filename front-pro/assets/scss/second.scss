@@ -1,6 +1,15 @@
 @import 'general';
-
-
+@media screen and(max-width:600px) {
+  h3{font-size:19px;}
+    }
+    @media screen and(max-width:600px) {
+        .aboutMedical{font-size:14px;}
+          }
+      
+          @media screen and(max-width:600px) {
+            .lists li{font-size:14px;}
+              }
+          
 
 #welcome{
     .right{

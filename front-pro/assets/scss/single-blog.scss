@@ -3,6 +3,31 @@ body{
   background-color: #f9faff;  
 }
 
+@media screen and(min-width:994px) and (max-width:1200px){
+    .post-lists li {margin-top:20px!important;
+        
+        .right-words{
+    span{
+        font-size: 15px!important;
+    }
+    h6 {
+        margin-top: 12px!important;
+        font-size: 15px!important;
+    }}
+}}
+
+
+@media screen and(max-width:600px) {
+    .group button {
+   margin-left:0!important;
+    }
+}
+@media screen and(max-width:600px) {
+    .card .image button{
+        font-size: 19px!important;
+        padding: 15px 20px!important;
+    }
+}
 .card{background-color: white;;
     border:none;
     -webkit-box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.48);
@@ -26,6 +51,7 @@ body{
         .group{
           
               button{
+                  margin-top:10px;
                 background-color: $blue;
                 color:white;;
               }

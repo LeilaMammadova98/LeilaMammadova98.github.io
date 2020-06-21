@@ -9,7 +9,7 @@ $text-grey: #7d7373;
          font-size:16px;
      }
      p{
-         font-size:13px;
+         font-size:15px;
      }
     
 }
@@ -21,6 +21,12 @@ bottom:0;
    //   position:relative;
     }
 }
+
+@media screen and(max-width:300px) {
+    p{
+        font-size:14px;
+    };
+    }
 
 @media screen and(max-width:300px) {
     .navbar-brand {

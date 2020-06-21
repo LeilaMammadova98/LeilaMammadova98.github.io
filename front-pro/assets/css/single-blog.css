@@ -6,7 +6,7 @@
     font-size: 16px;
   }
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -15,6 +15,12 @@
     width: 100%;
     z-index: 3;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  p {
+    font-size: 14px;
   }
 }
 
@@ -1170,6 +1176,32 @@ body {
   background-color: #f9faff;
 }
 
+@media screen and (min-width: 994px) and (max-width: 1200px) {
+  .post-lists li {
+    margin-top: 20px !important;
+  }
+  .post-lists li .right-words span {
+    font-size: 15px !important;
+  }
+  .post-lists li .right-words h6 {
+    margin-top: 12px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .group button {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card .image button {
+    font-size: 19px !important;
+    padding: 15px 20px !important;
+  }
+}
+
 .card {
   background-color: white;
   border: none;
@@ -1197,6 +1229,7 @@ body {
 }
 
 .card .group button {
+  margin-top: 10px;
   background-color: #396cf0;
   color: white;
 }
