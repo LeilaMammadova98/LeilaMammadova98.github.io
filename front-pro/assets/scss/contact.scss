@@ -1,5 +1,11 @@
 @import 'general';
-
+@media screen and(max-width:1000px) {
+    
+    .question{
+        margin-top:40px;;
+    }
+    
+    } 
 .invalid-feedback,.is-invalid{
     color:red!important;
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b4026515fc.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav {
+  background: #555;
+  text-align: center;
+}
+
+.nav ul {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.nav ul li {
+  position: relative;
+  float: left;
+}
+
+.nav ul li + li {
+  margin-left: 1px;
+}
+
+.nav ul li a {
+  background: #555;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 20px;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.nav ul li a:hover {
+  background: #646464;
+}
+
+.nav ul li > ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 100%;
+  left: -1px;
+  z-index: 1;
+  text-align: left;
+}
+
+.nav ul li > ul li {
+  float: none;
+  margin: 0;
+}
+
+.nav ul li > ul li a {
+  display: block;
+  border-top: 1px solid #555;
+}
+
+.nav ul li > ul li a:hover {
+  border-top: 1px solid #646464;
+  background: #555;
+}
+
+.nav ul li:hover a, .nav ul li.active a {
+  background: #646464;
+}
+
+.nav ul li.active {
+  pointer-events: none;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="navigation">
+          <li><a href="/">Home</a></li>
+          <li><a href="javascript:void(0);">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <ul>
+              <li><a href="#">Cleaning</a></li>
+              <li><a href="#">Washing</a></li>
+              <li><a href="#">Dtying</a></li>
+              <li><a href="#">Crashing</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Rules</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+   <script src="style.js"></script>
+</body>
+</html>

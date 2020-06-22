@@ -18,7 +18,19 @@
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 762px) {
+  .inputs h2 {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .appoint {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .footer .col-sm-6 {
     width: 50% !important;
   }
@@ -1120,7 +1132,7 @@ h4 {
   display: inline-block;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  padding: 22px;
+  padding: 14px;
 }
 
 .post-lists li {
@@ -1237,6 +1249,12 @@ section {
   padding: 16px;
   color: white;
   right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .question {
+    margin-top: 40px;
+  }
 }
 
 .invalid-feedback, .is-invalid {
