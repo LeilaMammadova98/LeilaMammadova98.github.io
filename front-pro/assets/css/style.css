@@ -34,7 +34,7 @@ body {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   .footer .col-sm-6 {
     width: 50% !important;
   }
@@ -48,8 +48,11 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .dropdown-menu {
+    margin-left: 0 !important;
+  }
   .appoint {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 
@@ -141,6 +144,13 @@ body {
     margin-left: -203px;
     width: 100%;
   }
+}
+
+.dropdown-menu {
+  border: none;
+  top: 192%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .bor.glide__slide--active .card {
@@ -388,44 +398,6 @@ nav {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
-}
-
-.nav-item:hover .nav-link {
-  color: #396cf0;
-}
-
-.nav-item:hover .elave {
-  color: #396cf0;
-  opacity: 1;
-}
-
-.nav-item .elave {
-  position: absolute;
-  width: 132px;
-  top: 68%;
-  opacity: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  left: 30%;
-  background-color: white;
-}
-
-.nav-item .elave li {
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.nav-item .elave li a {
-  color: black;
-}
-
-.nav-item .elave li:hover {
-  background-color: #eeeeee;
-}
-
-.nav-item .elave li:hover a {
-  color: #396cf0;
 }
 
 .contacts {

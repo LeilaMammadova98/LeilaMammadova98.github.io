@@ -2,6 +2,53 @@
 
 let pattern=/(.*)\/(.*)/g;
 $(document).ready(function () {
+    
+    $('.nav-link').click(function (e) { 
+        e.preventDefault();
+    
+    
+    let a=$(this).parent();
+    $('.nav-item').child('.dropdown-menu').css({"opacity":"0","display":"none"})
+    
+    $(a).find('.dropdown-menu').css({"opacity":"1","display":"block"})
+    $(a).prevAll().css("opacity","1")
+    $(a).nextAll().css("opacity","0")
+    })
+
+
+
+    
+ $('.nav-link').hover(function () {
+    $('.dropdown-menu').removeClass('show')
+        $(this).next('.dropdown-menu').addClass('show')
+         
+     }, 
+     
+    //  function () {
+    //     $(this).next('.dropdown-menu').removeClass('show')
+    //  }
+ );
+
+
+
+
+
+    });
+  
+// $(".nav-link").mouseleave(function (e) { 
+//     $(this).find('.elave').css({"opacity":"0","display":"none"})
+// });
+
+
+
+
+
+
+
+
+
+
+
     function hasTouch() {
         return 'ontouchstart' in document.documentElement
                || navigator.maxTouchPoints > 0
@@ -318,10 +365,11 @@ updateCount();
 )
     
 
-        
-        
+           
 
 
 
-}     
-)})
+
+    }     
+)
+
