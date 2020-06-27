@@ -60,7 +60,6 @@ body {
   .number {
     text-align: center;
     width: 100%;
-    z-index: 3;
     bottom: 0 !important;
   }
 }
@@ -247,10 +246,7 @@ header .navbar-toggler:focus {
 header .about-services {
   z-index: 99;
   border: 1px solid #eee;
-  display: inline-block;
   background-color: white;
-  padding: 29px;
-  margin-left: 94px;
   margin-top: -139px;
 }
 
@@ -567,6 +563,10 @@ nav {
 
 #departments p {
   color: #7d7373;
+}
+
+.nav-item.active a {
+  color: #396cf0;
 }
 
 .watchVideo .area {

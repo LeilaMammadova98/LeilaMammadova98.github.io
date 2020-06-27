@@ -4,7 +4,7 @@ let pattern=/(.*)\/(.*)/g;
 $(document).ready(function () {
     
     $('.nav-link').click(function (e) { 
-        e.preventDefault();
+       // e.preventDefault();
     
     
     let a=$(this).parent();
@@ -19,8 +19,9 @@ $(document).ready(function () {
 
     
  $('.nav-link').hover(function () {
+  
     $('.dropdown-menu').removeClass('show')
-        $(this).next('.dropdown-menu').addClass('show')
+       $(this).next('.dropdown-menu').addClass('show')
          
      }, 
      

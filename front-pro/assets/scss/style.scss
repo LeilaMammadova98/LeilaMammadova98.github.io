@@ -105,6 +105,7 @@ body {
 
 @media screen and(max-width:800px) {
     .about-services {
+        
      margin-top:0!important;
     }
 }
@@ -263,12 +264,13 @@ header {
 }
     .about-services {
         z-index: 99;
+   //     text-align: center;
         border: 1px solid #eee;
-        display: inline-block;
+     //   display: inline-block;
         background-color: white;
-        padding: 29px;
-        margin-left: 94px;
-        margin-top: -139px;
+        // padding: 29px;
+        // margin-left: 94px;
+     margin-top: -139px;
         .card {
             
             border: 1px solid $line-grey;
@@ -616,7 +618,11 @@ nav {
         color: $text-grey;
     }
 }
-
+.nav-item.active{
+    a{
+        color:$blue;
+    }
+}
 .watchVideo {
    // padding-top: 100px;
 
