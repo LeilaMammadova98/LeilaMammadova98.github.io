@@ -20,6 +20,12 @@ body {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 990px) {
+  .about-services .card {
+    width: 83%;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .watchVideo .video-area {
     margin-bottom: 0 !important;
@@ -1321,5 +1327,16 @@ h4 {
 
 .nav-link.active {
   color: #396cf0;
+}
+
+.card-contain {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

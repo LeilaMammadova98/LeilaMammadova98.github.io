@@ -21,6 +21,14 @@ body {
 * {
     box-sizing: border-box;
 }
+// @media screen and(max-width:990px) {
+//  .about-services{
+//      .card{
+//          width:83%;
+//      }
+//  }
+
+// }
 
 @media screen and(max-width:740px) {
     .watchVideo .video-area {
@@ -1286,4 +1294,9 @@ background-color: $blue;
 }
 
 
-    
+ .card-contain{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }   
