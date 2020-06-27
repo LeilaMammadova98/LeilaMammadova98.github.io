@@ -20,12 +20,6 @@ body {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 990px) {
-  .about-services .card {
-    width: 83%;
-  }
-}
-
 @media screen and (max-width: 740px) {
   .watchVideo .video-area {
     margin-bottom: 0 !important;
@@ -351,7 +345,6 @@ header .ust {
 }
 
 .slider img {
-  mix-blend-mode: overlay;
   height: 100vh;
   width: 100%;
 }
@@ -384,6 +377,8 @@ nav {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navbar-nav .nav-link {
@@ -960,6 +955,10 @@ nav {
           clip-path: polygon(43% 3%, 100% 12%, 100% 100%, 0 100%, 0 0);
 }
 
+.ourLetter .mail {
+  position: relative;
+}
+
 .ourLetter .mail #email1 {
   width: 75%;
   border-radius: 29px;
@@ -967,6 +966,22 @@ nav {
   padding-bottom: 12px;
   border: none;
   padding-left: 19px;
+}
+
+.ourLetter .mail #email1:focus {
+  outline: none;
+  border: none;
+}
+
+.ourLetter .mail .sendMail {
+  position: absolute;
+  color: #7d7373;
+  right: 14%;
+  top: 33%;
+}
+
+.ourLetter .mail .sendMail i {
+  text-decoration: none;
 }
 
 .ourLetter .title {

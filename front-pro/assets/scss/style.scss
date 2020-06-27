@@ -313,6 +313,29 @@ header {
             }
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .ust {
         position: absolute;
         z-index: 2;
@@ -360,7 +383,7 @@ header {
         }
     }
     img {
-        mix-blend-mode: overlay;
+      //  mix-blend-mode: overlay;
         height: 100vh;
         width: 100%;
     }
@@ -391,6 +414,7 @@ nav {
 .navbar-nav{margin-top: 10px;
     margin-right: 10px;
     margin-left: 13px;
+    transition:all 0.5s;
 .nav-link {
     color: black;
     font-size: 16.7px;
@@ -982,15 +1006,32 @@ padding-left:30px;
         padding-bottom:100px;
         background-color: $blue;
         clip-path: polygon(43% 3%, 100% 12%, 100% 100%, 0 100%, 0 0);
-        .mail{
+        .mail{  position:relative;
             #email1{
                 width: 75%;
                 border-radius: 29px;
                 padding-top: 12px;
                 padding-bottom: 12px;
                 border: none;
-                padding-left: 19px
+                padding-left: 19px;
+
+                &:focus{
+outline:none;
+border:none;
+                }
+              
+
             }
+            .sendMail{
+                position:absolute;
+color:$text-grey;
+right: 14%;
+    top: 33%;
+    i{
+        text-decoration:none;
+    }
+            }
+           
         }
         .title{
             color:white;

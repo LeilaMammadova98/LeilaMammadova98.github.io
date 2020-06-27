@@ -269,7 +269,7 @@ $('.rightDoub').click(function (e) {
         let ust = document.querySelector('.navbar')
         let a = window.scrollY;
 
-        if (a > 50) {
+        if (a > 100) {
             scroll.classList.add('show', 'text-white')
            ust.classList.add('pos')
         }
