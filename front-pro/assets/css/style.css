@@ -1354,4 +1354,8 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.nav-link:hover {
+  color: #396cf0;
+}
 /*# sourceMappingURL=style.css.map */

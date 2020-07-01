@@ -1228,6 +1228,10 @@ section {
   right: 0;
 }
 
+.nav-link:hover {
+  color: #396cf0;
+}
+
 .boxes {
   background-image: url(https://templates.envytheme.com/promedi/default/assets/img/bg.png);
   background-attachment: fixed;

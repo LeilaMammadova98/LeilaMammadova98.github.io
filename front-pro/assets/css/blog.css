@@ -1228,6 +1228,10 @@ section {
   right: 0;
 }
 
+.nav-link:hover {
+  color: #396cf0;
+}
+
 .page-item .page-link {
   width: 45px;
   display: -webkit-box;

@@ -1228,6 +1228,10 @@ section {
   right: 0;
 }
 
+.nav-link:hover {
+  color: #396cf0;
+}
+
 @media screen and (max-width: 1000px) {
   .question {
     margin-top: 40px;
