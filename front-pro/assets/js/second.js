@@ -18,19 +18,31 @@ $(document).ready(function () {
 
 
     
- $('.nav-link').hover(function () {
+ $('.nav-item').mouseover(function () {
+   $('.dropdown-menu').removeClass('show');
   
-    $('.dropdown-menu').removeClass('show')
-       $(this).next('.dropdown-menu').addClass('show')
-         
+    $(this).find('.dropdown-menu').addClass('show') ;
+
+      
      }, 
-     
-    //  function () {
-    //     $(this).next('.dropdown-menu').removeClass('show')
-    //  }
  );
 
+ $('.dropdown-menu').mouseover(function () {
+  $('.dropdown-menu').removeClass('show');
+           $(this).addClass('show')   
+         }, 
+     );
 
+ $('.nav-link').mouseleave(function () {
+   $('.dropdown-menu').removeClass('show')
+        },   
+    );
+    $('.dropdown-menu').mouseleave(function () {
+         $(this).removeClass('show')
+              }, 
+              
+         
+          );
 
 
 
